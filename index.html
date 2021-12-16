@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Conversor de Unidades</title>
+        <script type="text/javascript" src="./script.js" ></script>
+        <link rel="stylesheet" type="text/css" href="./.css/estilo.css">
+    </head>
+
+    <body>
+        <div class="cabecario">
+            <header>
+                <h1>Calculadora de Temperaturas</h1>
+                <h3>Você pode usar as escalas: Celsius,fahrenheit e Kelvin</h3>
+            </header>
+        </div>
+        <div class="main" id="main">
+            <div class="selects">
+                <select name="first" id="first" onchange="mudaEscala1(this)">
+                    <option>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
+                <select name="second" id="second" onchange="mudaEscala2(this)">
+                    <option>Celsius</option>
+                    <option>Fahrenheit</option>
+                    <option>Kelvin</option>
+                </select>
+            </div>
+            <div class="inputs">
+                <input type="number" id="input1" onchange="redict1()" onkeyup="redict1()">
+                <input type="number" id="input2" onchange="redict2()" onkeyup="redict2()">
+            </div>
+        </div>
+    </body>
+</html>
